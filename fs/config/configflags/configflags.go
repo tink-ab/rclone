@@ -148,10 +148,6 @@ func SetFlags() {
 		fs.Config.DeleteMode = fs.DeleteModeDefault
 	}
 
-	if fs.Config.IgnoreSize && fs.Config.SizeOnly {
-		log.Fatalf(`Can't use --size-only and --ignore-size together.`)
-	}
-
 	if fs.Config.Suffix != "" && fs.Config.BackupDir == "" {
 		log.Fatalf(`Can only use --suffix with --backup-dir.`)
 	}
