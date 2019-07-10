@@ -19,6 +19,8 @@ const debugTransport = false
 const (
 	gcmCipherID    = "aes128-gcm@openssh.com"
 	aes128cbcID    = "aes128-cbc"
+	aes192cbcID    = "aes192-cbc"
+	aes256cbcID    = "aes256-cbc"
 	tripledescbcID = "3des-cbc"
 )
 
