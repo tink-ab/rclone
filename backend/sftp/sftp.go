@@ -344,7 +344,8 @@ func NewFs(name, root string, m configmap.Mapper) (fs.Fs, error) {
 
 	if opt.UseInsecureCipher {
 		sshConfig.Config.SetDefaults()
-		sshConfig.Config.Ciphers = append(sshConfig.Config.Ciphers, "aes128-cbc")
+		sshConfig.Config.Ciphers = append(sshConfig.Config.Ciphers, "aes128-cbc", "aes192-cbc", "aes256-cbc")
+		sshConfig.Config.KeyExchanges = append(sshConfig.Config.KeyExchanges, "diffie-hellman-group-exchange-sha1", "diffie-hellman-group-exchange-sha256")
 	}
 
 	keyFile := env.ShellExpand(opt.KeyFile)
