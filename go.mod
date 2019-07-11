@@ -1,4 +1,4 @@
-module github.com/tink-ab/rclone
+module github.com/ncw/rclone
 
 require (
 	bazil.org/fuse v0.0.0-20180421153158-65cc252bf669
