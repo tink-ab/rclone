@@ -39,7 +39,7 @@ var preferredCiphers = []string{
 	"aes128-gcm@openssh.com",
 	chacha20Poly1305ID,
 	"aes128-ctr", "aes192-ctr", "aes256-ctr",
-	"aes192-cbc", "aes256-cbc",
+	"aes192-cbc", "aes256-cbc", 
 }
 
 // supportedKexAlgos specifies the supported key-exchange algorithms in
